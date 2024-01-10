@@ -20,10 +20,8 @@ hassio_role: "manager"
 webui: "http://[HOST]:[PORT:34001]/dashboard"
 ports: 
   34001/tcp: 34001
-  8601/tcp: 34002
 ports_description:
-  34001/tcp: Web UI
-  34002/tcp: Internal InfluxDB port
+  34001/tcp: SPC Dashboard port
 panel_icon: mdi:view-dashboard
 ingress: true
 ingress_port: 34001

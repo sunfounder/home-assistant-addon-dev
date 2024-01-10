@@ -8,7 +8,8 @@ RUN apt-get update
 RUN apt-get install python3 git -y
 
 # clone spc
-RUN git clone https://github.com/sunfounder/spc.git
+ADD https://api.github.com/repos/sunfounder/spc/git/refs/heads/main version.json
+RUN git clone -b main https://github.com/sunfounder/spc.git
 
 # install scp
 RUN cd /spc && python3 install.py --disable-autostart --skip-config-txt --skip-reboot
