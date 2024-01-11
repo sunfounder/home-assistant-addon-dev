@@ -8,7 +8,8 @@ RUN apt-get update
 RUN apt-get install git python3 python3-pip python3-setuptools procps -y
 
 # clone pironman
-RUN git clone -b v2.0 --depth 1 https://github.com/sunfounder/pironman.git
+ADD https://api.github.com/repos/sunfounder/pironman/git/refs/heads/main version.json
+RUN git clone -b dev --depth 1 https://github.com/sunfounder/pironman.git
 
 # install pironman
 RUN cd /pironman && python3 install.py --skip-config-txt --skip-auto-startup --skip-reboot
