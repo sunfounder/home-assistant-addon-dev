@@ -1,6 +1,6 @@
 # Pironman U1 Tutorial
 
-SunFounder Power Control is a software for Sunfounder UPS Case.
+SunFounder Power Control is a software for Sunfounder Pironman U1.
 
 ## Setup config.txt
 
