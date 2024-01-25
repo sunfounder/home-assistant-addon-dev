@@ -1,6 +1,7 @@
 # Pironman U1 Addon
 
 This is a Pironman U1 addon. Allow you to monitoring the power, control the power, and shutdown the system.
+![Pironman U1](./img/pironman-u1.jpg)
 
 ## Installation
 
@@ -26,7 +27,7 @@ docker logs hassio_supervisor -f
 ### Login the running addon container for debgging
 
 ```
-docker exec -it addon_local_pironman-u1-alpha /bin/bash
+docker exec -it addon_e5375b8b_pironman-u1-alpha /bin/bash
 ```
 
 
@@ -37,9 +38,9 @@ uninstall the addon first, then run the following command to clean up the image 
 
 ```
 # Stop the container
-docker stop addon_local_pironman-u1-alpha
+docker stop addon_e5375b8b_pironman-u1-alpha
 # remove the container
-docker remove addon_local_pironman-u1-alpha
+docker remove addon_e5375b8b_pironman-u1-alpha
 # Clean up cache
 docker image prune -af
 ```

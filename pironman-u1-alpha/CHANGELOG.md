@@ -1,7 +1,7 @@
 # Changelog
 
-## [0.0.4] - 2023-12-28
+## [0.0.11] - 2024-01-25
 
 ### Fixed
-- new 
+- Fix MQTT issue 
 
