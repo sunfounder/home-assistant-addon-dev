@@ -1,6 +1,6 @@
 name: "Pironman U1 Alpha"
 description: "Pironman U1 Support"
-version: "0.0.10"
+version: "0.0.11"
 slug: "pironman-u1-alpha"
 init: false
 arch:
