@@ -1,7 +1,8 @@
 # Pironman U1 Addon
 
 This is a Pironman U1 addon. Allow you to monitoring the power, control the power, and shutdown the system.
-![Pironman U1](./img/pironman-u1.jpg)
+
+![Pironman U1](https://raw.githubusercontent.com/sunfounder/home-assistant-addon-dev/main/pironman-u1-alpha/img/pironman-u1.webp)
 
 ## Installation
 
@@ -10,7 +11,9 @@ Click Install on top to install the Addon.
 > Remember to disable Protection Mode to enable Addon to access device i2c for reading datas from Pironman U1 Hat+
 
 
+## TODO
 
+- Update img path when addon is published
 
 ## Development
 
