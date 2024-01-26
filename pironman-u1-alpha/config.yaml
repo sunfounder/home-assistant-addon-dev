@@ -17,7 +17,7 @@ privileged:
 hassio_api: true
 hassio_role: "manager"
 # host_network: true
-webui: "http://[HOST]:[PORT:34001]/dashboard"
+webui: "http://[HOST]:[PORT:34001]"
 ports: 
   34001/tcp: 34001
 ports_description:
@@ -25,5 +25,4 @@ ports_description:
 panel_icon: mdi:view-dashboard
 ingress: true
 ingress_port: 34001
-ingress_entry: "dashboard"
 

@@ -1,7 +1,7 @@
 # Changelog
 
-## [0.0.11] - 2024-01-25
+## [0.0.12] - 2024-01-26
 
 ### Fixed
-- Fix MQTT issue 
+- Modifiy ingress path 
 

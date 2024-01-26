@@ -7,15 +7,15 @@ RUN apt-get update
 # install dependencies
 RUN apt-get install python3 git -y
 
+# set the working directory to /data/pironman
+WORKDIR /data
+
 # clone spc
 ADD https://api.github.com/repos/sunfounder/spc/git/refs/heads/main version.json
 RUN git clone -b main https://github.com/sunfounder/spc.git
 
 # install scp
-RUN cd /spc && python3 install.py --disable-autostart --skip-config-txt --skip-reboot
-
-# set the working directory to /data/pironman
-WORKDIR /data
+RUN cd spc && python3 install.py --disable-autostart --skip-config-txt --skip-reboot
 
 # copy run.sh
 COPY run.sh /
