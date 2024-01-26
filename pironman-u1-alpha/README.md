@@ -2,7 +2,7 @@
 
 This is a Pironman U1 addon. Allow you to monitoring the power, control the power, and shutdown the system.
 
-![Pironman U1](https://raw.githubusercontent.com/sunfounder/home-assistant-addon-dev/main/pironman-u1-alpha/img/pironman-u1.webp)
+![Pironman U1](https://raw.githubusercontent.com/sunfounder/home-assistant-addon-dev/main/pironman-u1-alpha/img/pironman-u1.jpg)
 
 ## Installation
 
