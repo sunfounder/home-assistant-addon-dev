@@ -21,7 +21,7 @@ webui: "http://[HOST]:[PORT:34001]"
 ports: 
   34001/tcp: 34001
 ports_description:
-  34001/tcp: SPC Dashboard port
+  34001/tcp: Dashboard port
 panel_icon: mdi:view-dashboard
 ingress: true
 ingress_port: 34001

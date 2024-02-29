@@ -12,6 +12,7 @@
   - [Development](#development)
     - [Cleanup image cache](#cleanup-image-cache)
     - [Login the running addon container for debgging](#login-the-running-addon-container-for-debgging)
+    - [Login to a failed closed addon](#login-to-a-failed-closed-addon)
     - [Home Assistant Supervisor log](#home-assistant-supervisor-log)
     - [App Armor](#app-armor)
 
@@ -116,20 +117,36 @@ docker image prune -af
 ### Login the running addon container for debgging
 
 Find the container name
-```
+```bash
 docker ps
 ```
 
 replace the `<container_name>` in the following command
-```
+
+```bash
 docker exec -it <container_name> /bin/bash
+```
+
+### Login to a failed closed addon
+
+If the container is closed, you can still login to the container to check the log.
+
+Find the image name and version
+```bash
+docker image list
+```
+
+Replace the `<image>:<version>` in the following command
+
+```bash
+docker run -it <image>:<version> /bin/bash
 ```
 
 ### Home Assistant Supervisor log
 
 See supervisor log for appon reflash and install errors
 
-```
+```bash
 docker logs hassio_supervisor -f
 ```
 
@@ -137,6 +154,6 @@ docker logs hassio_supervisor -f
 
 Check if complain enabled
 
-```
+```bash
 docker inspect addon_local_pironman | grep "AppArmorProfile"
 ```
