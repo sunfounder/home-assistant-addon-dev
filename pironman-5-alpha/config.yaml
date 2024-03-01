@@ -1,6 +1,6 @@
 name: "Pironman 5 alpha"
 description: "Pironman 5 support alpha"
-version: "0.0.9"
+version: "0.0.10"
 slug: "pironman5"
 init: false
 arch:
@@ -16,6 +16,8 @@ hassio_api: true
 hassio_role: "manager"
 map:
  - addon_config:rw
+environment:
+  BLINKA_FORCECHIP: "BCM2XXX"
 
 webui: "http://[HOST]:[PORT:34001]"
 ports: 
