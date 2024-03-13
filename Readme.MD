@@ -99,8 +99,6 @@ Change to the Log tab, and see if there's any error. If not, you can continue to
 
 You can change the configuration in the Configuration tab. Navigate to Configuration tab, and change the settings.
 
-
-
 ## Development
 
 Development instruction for addon developer.
