@@ -12,7 +12,7 @@ ADD https://api.github.com/repos/sunfounder/pironman5/git/refs/heads/main versio
 RUN git clone https://github.com/sunfounder/pironman5.git
 
 # install pironman
-RUN cd /pironman5 && python3 install.py --skip-auto-start --skip-reboot --skip-config-txt --plain-text > install.log 2> install.err
+RUN cd /pironman5 && python3 install.py --skip-auto-start --skip-reboot --skip-config-txt --plain-text
 
 # install libgpiod
 # RUN apt-get update && \
