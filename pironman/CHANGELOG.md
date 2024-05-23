@@ -3,6 +3,6 @@
 ## [1.0.12] - 2024-5-23
 
 ### Fixed
-- Fixed rebuild on boot 4
+- Fixed rebuild on boot 5
 
 

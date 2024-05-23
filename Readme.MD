@@ -15,6 +15,7 @@
     - [Login to a failed closed addon](#login-to-a-failed-closed-addon)
     - [Home Assistant Supervisor log](#home-assistant-supervisor-log)
     - [App Armor](#app-armor)
+  - [Publish](#publish)
 
 
 ## Pironman Addon
@@ -154,4 +155,21 @@ Check if complain enabled
 
 ```bash
 docker inspect addon_local_pironman | grep "AppArmorProfile"
+```
+
+## Publish
+
+To publish the addon, you need to build the image and push it to the docker hub.
+
+```bash
+# 编译镜像
+docker build . \
+   --build-arg BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base/armv7:9.0.2 \
+   -t cavon/aarch64-addon-pironman:1.0.12
+
+# 登录docker
+docker login
+
+# 推送镜像
+docker push cavon/aarch64-addon-pironman:1.0.12
 ```
